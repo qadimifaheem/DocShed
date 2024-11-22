@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ToolbarTitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="ActiveNavText" parent="TextAppearance.AppCompat">
+
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="InactiveNavText" parent="TextAppearance.AppCompat">
+
+        <item name="android:textSize">12sp</item>
+    </style>
+
+</resources>
