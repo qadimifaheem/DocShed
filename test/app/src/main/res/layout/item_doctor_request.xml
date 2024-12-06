@@ -1,0 +1,93 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/doctor_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/line_a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Doctor Name"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/line_j"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email" />
+
+    <TextView
+        android:id="@+id/line_e"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone Number" />
+
+    <TextView
+        android:id="@+id/line_i"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gender" />
+
+    <TextView
+        android:id="@+id/line_g"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Age" />
+
+    <TextView
+        android:id="@+id/line_d"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Region" />
+
+    <TextView
+        android:id="@+id/line_h"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Specializations" />
+
+    <TextView
+        android:id="@+id/line_c"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Experience" />
+
+
+    <TextView
+        android:id="@+id/line_f"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fees" />
+    <TextView
+        android:id="@+id/line_b"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Medical License Number" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Medical License image" />
+    <ImageView
+        android:id="@+id/li"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop"
+        android:layout_marginBottom="10dp"/>
+
+
+    <Button
+        android:id="@+id/approveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Approve"></Button>
+
+</LinearLayout>
