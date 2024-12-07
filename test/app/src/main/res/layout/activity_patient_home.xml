@@ -52,7 +52,7 @@
                 android:layout_margin="5dp"
                 android:background="@drawable/custom_edittext"
                 app:cardBackgroundColor="@color/white"
-                app:cardCornerRadius="30dp"
+                app:cardCornerRadius="15dp"
                 app:cardElevation="4dp"
                 app:cardUseCompatPadding="true">
 
@@ -323,7 +323,7 @@
                 android:layout_margin="5dp"
                 android:background="@drawable/custom_edittext"
                 app:cardBackgroundColor="@color/white"
-                app:cardCornerRadius="30dp"
+                app:cardCornerRadius="15dp"
                 app:cardElevation="4dp"
                 app:cardUseCompatPadding="true">
 

@@ -71,10 +71,7 @@ class PatientsDetailsAppionmentsActivity : AppCompatActivity() {
         } else {
             startService(serviceIntent) // For older versions
         }
-        // Set up back button click listener
-        findViewById<View>(R.id.Back).setOnClickListener {
-            finish() // Close the activity
-        }
+
     }
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         menuInflater.inflate(R.menu.menu_all, menu)

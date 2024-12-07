@@ -102,7 +102,8 @@ dependencies {
     annotationProcessor ("com.github.bumptech.glide:compiler:4.12.0")// For Java projects
     implementation ("com.google.code.gson:gson:2.8.8")
 
-    implementation ("com.google.android.material:material:1.6.0")
+    implementation("com.google.android.material:material:1.9.0")
+
     // APIs
     // Firebase dependencies
     // Firebase Authentication: used to implement user login, registration, etc.

@@ -16,6 +16,10 @@ import com.bumptech.glide.Glide
 import com.example.test.R
 import com.example.test.Step22.Doctor.CDoctorHome.BChangeFees.ChangeFeesActivity
 import com.example.test.Step22.Doctor.ALogin.LoginDoctorActivity
+import com.example.test.Step22.Doctor.CDoctorHome.ASetAppointment.AList.AppointmentListActivity
+import com.example.test.Step22.Doctor.CDoctorHome.ASetAppointment.BDelete.DeleteAppointmentListActivity
+import com.example.test.Step22.Doctor.CDoctorHome.ASetAppointment.CManage.ManageActivity
+import com.example.test.Step22.Doctor.CDoctorHome.ASetAppointment.DSetAppoint.SetDateAndTimeActivity
 import com.example.test.Step22.Doctor.CDoctorHome.ASetAppointment.SetAppiomentActivity
 import com.example.test.Step22.Doctor.CDoctorHome.DMedicine.MedicineActivity
 import com.example.test.Step22.Doctor.CDoctorHome.CPatientDetailsAppointment.PatientsDetailsAppionmentsActivity
@@ -34,6 +38,14 @@ class DoctorHomeActivity : AppCompatActivity() {
     private lateinit var Medicine: CardView
     private lateinit var History: CardView
 
+
+    private lateinit var showList: CardView
+    private lateinit var setDnT: CardView
+    private lateinit var dltAppio: CardView
+    private lateinit var scheduleAppointments: CardView
+    private lateinit var firestore: FirebaseFirestore
+    private lateinit var auth: FirebaseAuth
+
     // private lateinit var setting: CardView
     private lateinit var dlogout: CardView
 
@@ -51,8 +63,15 @@ class DoctorHomeActivity : AppCompatActivity() {
         showPatient = findViewById(R.id.DoctorHomeShowPatientDetails)
         Medicine = findViewById(R.id.DoctorHomeMedicine)
         History = findViewById(R.id.DoctorHomeHistory)
-        //   setting = findViewById(R.id.setting)
         dlogout = findViewById(R.id.Logout)
+
+        firestore = FirebaseFirestore.getInstance()
+        auth = FirebaseAuth.getInstance()
+
+        showList = findViewById(R.id.Showappiomentlist)
+        setDnT = findViewById(R.id.SetTimeAndDates)
+        dltAppio = findViewById(R.id.DeleteAppioment)
+        scheduleAppointments = findViewById(R.id.SheduleAppionments)
 
         // Check if the doctor is active
         doctorId?.let {
@@ -100,6 +119,27 @@ class DoctorHomeActivity : AppCompatActivity() {
 
                 else -> false
             }
+        }
+
+        // Show list of appointments
+        showList.setOnClickListener {
+            startActivity(Intent(this@DoctorHomeActivity, AppointmentListActivity::class.java))
+        }
+
+        // Set Date and Time button
+        setDnT.setOnClickListener {
+            startActivity(Intent(this@DoctorHomeActivity, SetDateAndTimeActivity::class.java))
+        }
+
+        // Delete Appointments button
+        dltAppio.setOnClickListener {
+            startActivity(Intent(this@DoctorHomeActivity, DeleteAppointmentListActivity::class.java))
+        }
+
+        // Schedule Appointments button
+        scheduleAppointments.setOnClickListener {
+
+            startActivity(Intent(this@DoctorHomeActivity, ManageActivity::class.java))
         }
 
         // Logout button

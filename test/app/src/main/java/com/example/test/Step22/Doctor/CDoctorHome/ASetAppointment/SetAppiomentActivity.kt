@@ -40,7 +40,6 @@ class SetAppiomentActivity : AppCompatActivity() {
         showList = findViewById(R.id.Showappiomentlist)
         setDnT = findViewById(R.id.SetTimeAndDates)
         dltAppio = findViewById(R.id.DeleteAppioment)
-     //   setBack = findViewById(R.id.SetAppiomentBack)
         scheduleAppointments = findViewById(R.id.SheduleAppionments)
 
         val userId = auth.currentUser?.uid
@@ -53,11 +52,6 @@ class SetAppiomentActivity : AppCompatActivity() {
             redirectToLogin() // No doctorId means the doctor is not logged in
         }
 
-        // Back button
-//        setBack.setOnClickListener {
-//            startActivity(Intent(this@SetAppiomentActivity, DoctorHomeActivity::class.java))
-//            finish()
-//        }
         // Show list of appointments
         showList.setOnClickListener {
             startActivity(Intent(this@SetAppiomentActivity, AppointmentListActivity::class.java))

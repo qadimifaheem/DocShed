@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical"
-    android:background="@drawable/cardbg"
+    android:background="@color/purple"
     tools:context=".Step22.Doctor.CDoctorHome.DMedicine.MedicineActivity">
 
 
@@ -26,13 +26,13 @@
         />
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="700dp"
+        android:layout_height="match_parent"
         android:layout_gravity="fill"
-        app:cardBackgroundColor="#E1EDF6"
+        app:cardBackgroundColor="@color/white"
         app:cardCornerRadius="15dp"
+        android:layout_margin="10dp"
         app:cardElevation="20dp"
-        app:cardMaxElevation="16dp"
-        app:cardUseCompatPadding="true">
+        app:cardMaxElevation="16dp">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

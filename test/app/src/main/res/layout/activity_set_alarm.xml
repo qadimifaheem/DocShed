@@ -21,9 +21,16 @@
         android:layout_gravity="top"
         app:titleTextAppearance="@style/ToolbarTitleText"
         />
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="5">
+
+    </Space>
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_margin="25dp"
         app:cardCornerRadius="30dp"
         app:cardElevation="20dp"
@@ -34,7 +41,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:orientation="vertical"
-            android:background="#E1EDF6"
+            android:background="#F4F5FF"
             android:padding="24dp">
 
             <LinearLayout
@@ -166,6 +173,12 @@
 
     </androidx.cardview.widget.CardView>
 
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="10">
+
+    </Space>
 
 </androidx.appcompat.widget.LinearLayoutCompat>
 
