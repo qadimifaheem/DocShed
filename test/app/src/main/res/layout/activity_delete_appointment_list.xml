@@ -1,0 +1,64 @@
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".Step22.Doctor.CDoctorHome.ASetAppointment.BDelete.DeleteAppointmentListActivity">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/toolbar_background"
+        android:elevation="8dp"
+        android:layout_gravity="top"
+        app:titleTextColor="@color/purple"
+        android:paddingTop="15dp"
+        app:titleTextAppearance="@style/ToolbarTitleText"
+        />
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="fill"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="15dp"
+        android:layout_margin="10dp"
+        app:cardElevation="20dp"
+        app:cardMaxElevation="16dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Delete Appointments"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="1dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="20sp"></TextView>
+        <ListView
+            android:id="@+id/DeleteAppointmentList"
+            android:paddingVertical="5dp"
+            android:clickable="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:listSelector="@color/white"
+            android:background="@color/white"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="15" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@drawable/loginbkg_1__2_11"
+android:gravity="center"
+android:orientation="vertical"
+tools:context=".Step22.Doctor.BRegister.RegisterDoctorActivity">
+
+
+<Space
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_weight="1">
+</Space>
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="30dp"
+    android:background="@drawable/custom_edittext"
+    app:cardCornerRadius="30dp"
+    app:cardElevation="20dp"
+    app:cardBackgroundColor="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="36sp"
+            android:textStyle="bold" />
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="300dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+                <ImageView
+                    android:id="@+id/doctorProfileImageView"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/noimage"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="Doctor Profile Image"
+                    android:background="@drawable/cardbg1"
+                    android:padding="8dp" />
+
+                <Button
+                    android:id="@+id/selectDoctorImageButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:text="Select Image" />
+
+                <EditText
+                    android:id="@+id/DoctorEdittextRegisterUsername"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/custom_edittext"
+                    android:drawableLeft="@drawable/icons8_male_user_20"
+                    android:drawablePadding="8dp"
+                    android:hint="Enter Username"
+                    android:padding="8dp"
+                    android:textColor="@color/black"
+                    android:textColorHighlight="@color/cardview_dark_background" />
+
+
+                <EditText
+                    android:id="@+id/DoctorEdittextRegisterEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/custom_edittext"
+                    android:drawableLeft="@drawable/icons8_email_20"
+                    android:drawablePadding="8dp"
+                    android:hint="Enter email"
+                    android:inputType="textEmailAddress"
+                    android:padding="8dp"
+                    android:textColor="@color/black"
+                    android:textColorHighlight="@color/cardview_dark_background" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Specialization"
+                    android:layout_marginTop="25dp"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:padding="16dp">
+                </TextView>
+                <com.google.android.material.chip.ChipGroup
+                    android:id="@+id/doctorSpecializationChipGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.chip.Chip
+                    android:id="@+id/generalPhysicianChip"
+                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="General Physician" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/PediatricsChip"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pediatrics" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/DermatologyChip"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Dermatology" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/PsychiatryChip"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Psychiatry" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/StomachanddigestionChip"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Stomach and digestion" />
+
+
+
+                </com.google.android.material.chip.ChipGroup>
+
+                <EditText
+                    android:id="@+id/DoctorMedicalLicensenumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/custom_edittext"
+                    android:drawableLeft="@drawable/licience"
+                    android:drawablePadding="8dp"
+                    android:hint="Medical license number"
+                    android:padding="8dp"
+                    android:textColor="@color/black"
+                    android:textColorHighlight="@color/cardview_dark_background" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Medical licensing image"
+                    android:layout_marginTop="25dp"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:padding="16dp">
+                </TextView>
+                <ImageView
+                    android:id="@+id/DoctorMedicalLicenseImageView"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/noimage"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="Doctor Profile Image"
+                    android:background="@drawable/cardbg1"
+                    android:padding="8dp" />
+
+                <Button
+                    android:id="@+id/selectDoctorMedicalLicenseImageButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:text="Select Image" />
+                <EditText
+                    android:id="@+id/DoctorExperience"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/custom_edittext"
+                    android:drawableLeft="@drawable/experience"
+                    android:drawablePadding="8dp"
+                    android:hint="Experience in years"
+                    android:inputType="numberDecimal"
+                    android:padding="8dp"
+                    android:textColor="@color/black"
+                    android:textColorHighlight="@color/cardview_dark_background" />
+                <EditText
+                    android:id="@+id/DoctorAge"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/custom_edittext"
+                    android:drawableLeft="@drawable/age"
+                    android:drawablePadding="8dp"
+                    android:hint="Your age"
+                    android:inputType="numberDecimal"
+                    android:padding="8dp"
+                    android:textColor="@color/black"
+                    android:textColorHighlight="@color/cardview_dark_background" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Select your gender"
+                    android:layout_marginTop="25dp"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:padding="16dp">
+                </TextView>
+                <com.google.android.material.chip.ChipGroup
+                    android:id="@+id/chipGroupGender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chipMale"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Male" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chipFemale"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Female" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chipOthers"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Others" />
+
+                </com.google.android.material.chip.ChipGroup>
+                <EditText
+                    android:id="@+id/DoctorRegion"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/custom_edittext"
+                    android:drawableLeft="@drawable/address"
+                    android:drawablePadding="8dp"
+                    android:hint="Region/city"
+                    android:padding="8dp"
+                    android:textColor="@color/black"
+                    android:textColorHighlight="@color/cardview_dark_background" />
+                <EditText
+                    android:id="@+id/DoctorPhoneNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/custom_edittext"
+                    android:drawableLeft="@drawable/phone"
+                    android:drawablePadding="8dp"
+                    android:hint="Phone Number"
+                    android:inputType="phone"
+                    android:padding="8dp"
+                    android:textColor="@color/black"
+                    android:textColorHighlight="@color/cardview_dark_background" />
+                <EditText
+                    android:id="@+id/DoctorUPI"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/custom_edittext"
+                    android:drawableLeft="@drawable/phone"
+                    android:drawablePadding="8dp"
+                    android:hint="UPI ID"
+                    android:padding="8dp"
+                    android:textColor="@color/black"
+                    android:textColorHighlight="@color/cardview_dark_background" />
+                <EditText
+                    android:id="@+id/Doctorfees"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/custom_edittext"
+                    android:drawableLeft="@drawable/money"
+                    android:drawablePadding="8dp"
+                    android:hint="What is your fees in /Rs?"
+                    android:inputType="phone"
+                    android:padding="8dp"
+                    android:textColor="@color/black"
+                    android:textColorHighlight="@color/cardview_dark_background" />
+
+                <EditText
+                    android:id="@+id/DoctoredittextRegisterPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/custom_edittext"
+                    android:drawableLeft="@drawable/icons8_password_20"
+                    android:drawablePadding="8dp"
+                    android:hint="Enter password"
+                    android:inputType="textPassword"
+                    android:padding="8dp"
+                    android:textColor="@color/black"
+                    android:textColorHighlight="@color/cardview_dark_background" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/custom_edittext"
+                    android:drawablePadding="8dp"
+                    android:padding="8dp"
+                    android:textColorHighlight="@color/cardview_dark_background"
+                    android:inputType="textPassword"
+                    android:textColor="@color/black"
+                    android:drawableLeft="@drawable/icons8_password_20"
+                    android:hint="Confirm password"
+                    android:id="@+id/DoctoreditTextRegisterConfirmPassword"/>
+            </LinearLayout>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/DoctorRegisterIn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="@color/purple"
+            android:text="Register"
+            android:textSize="18sp"
+            app:cornerRadius="20dp" />
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
+
+
+<TextView
+    android:id="@+id/DoctorTextViewGotoLoginPage"
+    android:layout_width="wrap_content"
+    android:layout_height="48dp"
+    android:layout_gravity="center"
+    android:layout_marginTop="20dp"
+    android:layout_marginBottom="20dp"
+    android:clickable="true"
+    android:padding="8dp"
+    android:text="Already registered? Login Now"
+    android:textAlignment="center"
+    android:textColor="@color/white"
+    android:textSize="14sp" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

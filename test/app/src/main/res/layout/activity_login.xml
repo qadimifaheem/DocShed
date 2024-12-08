@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Step21.Patient.ALogin.LoginActivity"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/loginbkg_1">
+
+    <androidx.cardview.widget.CardView
+        android:layout_margin="30dp"
+        app:cardElevation="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="30dp"
+        app:cardBackgroundColor="#FFFFFF"
+        android:layout_marginTop="12dp"
+        android:layout_gravity="center"
+        android:outlineProvider="background">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:padding="24dp">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" Login "
+                android:textSize="36sp"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/PEmail"
+                android:background="@drawable/custom_edittext"
+                android:drawableLeft="@drawable/icons8_male_user_20"
+                android:drawablePadding="8dp"
+                android:hint="Email"
+                android:padding="8dp"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/cardview_dark_background" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/edittextpassword"
+                android:background="@drawable/custom_edittext"
+                android:drawableLeft="@drawable/icons8_password_20"
+                android:drawablePadding="8dp"
+                android:hint="Password"
+                android:padding="8dp"
+                android:inputType="textPassword"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/cardview_dark_background"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:id="@+id/patientforgotpassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Forgot password?"
+                android:textStyle="bold"
+                android:textAlignment="viewEnd"
+                android:clickable="true"
+                android:textSize="16sp"
+                android:textColor="@color/purple"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/LoginButton"
+                android:text="Login"
+                android:textSize="18sp"
+                android:layout_marginTop="30dp"
+                android:backgroundTint="@color/purple"
+                app:cornerRadius = "20dp"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+    <ImageView
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/pngkit_mpaa_logo_png_1783296"
+        android:layout_marginEnd="5dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="30dp"
+        android:layout_margin="1dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:soundEffectsEnabled="true"
+        android:id="@+id/GoodleSignin"
+        android:contentDescription="sign_in_button">
+    </ImageView>
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginTop="15dp"
+        android:id="@+id/registerNewUser"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:text="New user? click to register."
+        android:textStyle="bold"
+        android:clickable="true"
+        android:textSize="16sp"
+        android:padding="16dp"
+        android:textColor="@color/purple"/>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
+

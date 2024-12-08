@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".Step22.Doctor.CDoctorHome.ASetAppointment.DSetAppoint.SetDateAndTimeActivity">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:background="@drawable/toolbar_background"
+        android:elevation="8dp"
+        app:titleTextColor="@color/purple"
+        android:paddingTop="15dp"
+        app:titleTextAppearance="@style/ToolbarTitleText"
+        />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"></Space>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="15dp"
+        android:layout_margin="10dp"
+        app:cardElevation="20dp"
+        app:cardMaxElevation="16dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="1dp"
+                android:text="Set Appointments"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"></TextView>
+
+            <!-- Day selection section -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="20dp"
+                android:text="Select Day:"
+                android:textSize="16sp"
+                android:padding="5dp"
+                android:textStyle="bold"
+                android:background="@drawable/custom_edittext"
+                />
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:columnCount="3"
+                android:rowCount="3"
+                android:background="@drawable/custom_edittext"
+                android:backgroundTint="@color/white">
+
+
+                <!-- CheckBoxes for each day of the week -->
+                <CheckBox
+                    android:id="@+id/checkbox_monday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Monday"
+                    />
+
+
+                <CheckBox
+                    android:id="@+id/checkbox_tuesday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tuesday"/>
+
+
+                <CheckBox
+                    android:id="@+id/checkbox_wednesday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Wednesday"/>
+
+
+                <CheckBox
+                    android:id="@+id/checkbox_thursday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Thursday"/>
+
+
+                <CheckBox
+                    android:id="@+id/checkbox_friday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Friday"/>
+
+
+                <CheckBox
+                    android:id="@+id/checkbox_saturday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Saturday"/>
+
+
+                <CheckBox
+                    android:id="@+id/checkbox_sunday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sunday"/>
+
+
+            </GridLayout>
+
+
+            <!-- Time range selection -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Selected Time Range:"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/text_monday_time_range"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="2dp"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="10dp"
+                android:textStyle="bold"
+                android:background="@drawable/custom_edittext"
+                android:backgroundTint="@color/white"/>
+
+            <TextView
+                android:id="@+id/text_tuesday_time_range"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="2dp"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="10dp"
+                android:textStyle="bold"
+                android:background="@drawable/custom_edittext"
+                android:backgroundTint="@color/white"/>
+
+            <TextView
+                android:id="@+id/text_wednesday_time_range"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="2dp"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="10dp"
+                android:textStyle="bold"
+                android:background="@drawable/custom_edittext"
+                android:backgroundTint="@color/white"/>
+
+            <TextView
+                android:id="@+id/text_thursday_time_range"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="2dp"
+                android:text=""
+                android:background="@drawable/custom_edittext"
+                android:backgroundTint="@color/white"
+                android:textColor="@color/black"
+                android:textSize="10dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text_friday_time_range"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="2dp"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="10dp"
+                android:textStyle="bold"
+                android:background="@drawable/custom_edittext"
+                android:backgroundTint="@color/white"/>
+
+            <TextView
+                android:id="@+id/text_saturday_time_range"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="2dp"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="10dp"
+                android:textStyle="bold"
+                android:background="@drawable/custom_edittext"
+                android:backgroundTint="@color/white"/>
+
+            <TextView
+                android:id="@+id/text_sunday_time_range"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="2dp"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="10dp"
+                android:textStyle="bold"
+                android:background="@drawable/custom_edittext"
+                android:backgroundTint="@color/white"/>
+
+
+            <!-- Save Button to confirm and save the generated appointments -->
+            <Button
+                android:id="@+id/btn_save_appointments"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/darkblue"
+                android:text="Save Appointments"
+                android:textColor="@android:color/white" />
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="10">
+
+    </Space>
+</androidx.appcompat.widget.LinearLayoutCompat>

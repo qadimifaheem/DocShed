@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.SET_ALARM" />
+    <uses-permission android:name="android.permission.USE_EXACT_ALARM" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_DATA_SYNC" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:resizeableActivity="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Test"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".Step21.Patient.CPatientHome.FBottomNavigation.NavigationAppointmentBookedActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Step20.Admin.CAdminHome.GBottomNavigation.NavigtionHistor3Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Step21.Patient.CPatientHome.FBottomNavigation.NavigtionHistory2Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Step22.Doctor.CDoctorHome.GBottomNavigation.NavigationHistoryActivity"
+            android:exported="false" />
+
+        <service
+            android:name=".Step22.Doctor.CDoctorHome.CPatientDetailsAppointment.NotificationService"
+            android:exported="false"
+            android:foregroundServiceType="dataSync" />
+
+        <activity
+            android:name=".Step22.Doctor.CDoctorHome.ASetAppointment.DSetAppoint.SetDateAndTimeActivity"
+            android:exported="false" />
+
+        <service
+            android:name=".Step21.Patient.CPatientHome.DMedicine.AlarmService"
+            android:exported="false"
+            android:foregroundServiceType="dataSync" />
+
+        <activity
+            android:name=".Step22.Doctor.CDoctorHome.CPatientDetailsAppointment.MedicineDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Step20.Admin.CAdminHome.BCancle.CancleRequestActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Step20.Admin.CAdminHome.EEnquiry.EnquiryDoctorsListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Step20.Admin.CAdminHome.EEnquiry.EnquiryListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Step20.Admin.CAdminHome.EEnquiry.EnquiryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Step20.Admin.CAdminHome.DList.AChoice.BPatient.PatientListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Step20.Admin.CAdminHome.DList.AChoice.ADoctor.ADoctorsDetails.AllDoctorsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Step20.Admin.CAdminHome.DList.AChoice.ADoctor.DoctorListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Step20.Admin.CAdminHome.DList.AdminChoiceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Step20.Admin.CAdminHome.CChangeFees.DoctorFeesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Step20.Admin.CAdminHome.ARequest.RequestActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Step20.Admin.CAdminHome.FSetting.AdminSettingActivity"
+            android:exported="false"
+            android:resizeableActivity="true" />
+        <activity
+            android:name=".Step20.Admin.CAdminHome.AdminHomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Step20.Admin.BRegister.AdminRegisterActivity"
+            android:exported="false"
+            android:resizeableActivity="true" />
+        <activity
+            android:name=".Step20.Admin.ALogin.AdminLoginActivity"
+            android:exported="false"
+            android:resizeableActivity="true" />
+        <activity
+            android:name=".Step22.Doctor.CDoctorHome.ASetAppointment.CManage.ManageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Step22.Doctor.CDoctorHome.ASetAppointment.BDelete.DeleteAppointmentListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Step22.Doctor.CDoctorHome.EHistory.DoctorHistoryActivity"
+            android:exported="false"
+            android:resizeableActivity="true" />
+        <activity
+            android:name=".Step22.Doctor.CDoctorHome.FSetting.DoctorSettingActivity"
+            android:exported="false"
+            android:resizeableActivity="true" />
+        <activity
+            android:name=".Step22.Doctor.CDoctorHome.DMedicine.SetAlarmActivity"
+            android:exported="false"
+            android:resizeableActivity="true" />
+        <activity
+            android:name=".Step22.Doctor.CDoctorHome.DMedicine.MedicineActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Step22.Doctor.CDoctorHome.CPatientDetailsAppointment.FullScreenImageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Step22.Doctor.CDoctorHome.CPatientDetailsAppointment.PatientDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Step22.Doctor.CDoctorHome.CPatientDetailsAppointment.PatientsDetailsAppionmentsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Step22.Doctor.CDoctorHome.BChangeFees.ChangeFeesActivity"
+            android:exported="false"
+            android:resizeableActivity="true" />
+        <activity
+            android:name=".Step22.Doctor.CDoctorHome.ASetAppointment.AList.AppointmentListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Step22.Doctor.CDoctorHome.ASetAppointment.SetAppiomentActivity"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.firebase.database"
+            android:value="true" />
+
+        <activity
+            android:name=".Step22.Doctor.CDoctorHome.DoctorHomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Step22.Doctor.BRegister.RegisterDoctorActivity"
+            android:exported="false"
+            android:resizeableActivity="true" />
+        <activity
+            android:name=".Step22.Doctor.ALogin.LoginDoctorActivity"
+            android:exported="false"
+            android:resizeableActivity="true" />
+        <activity
+            android:name=".Step21.Patient.CPatientHome.ESetting.PatientsSettingActivity"
+            android:exported="false"
+            android:resizeableActivity="true" />
+
+        <receiver
+            android:name=".Step21.Patient.CPatientHome.DMedicine.AlarmReceiver"
+            android:enabled="true"
+            android:exported="false" />
+
+        <activity
+            android:name=".Step21.Patient.CPatientHome.DMedicine.PatientMedicineAlarmActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Step21.Patient.CPatientHome.CHistory.HistoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Step21.Patient.CPatientHome.BAppointmentsBooked.AppointmentBookedActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Step21.Patient.CPatientHome.AFindDoctor.ADoctorDetailsAndBookAppointments.DoctorAppointmentsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Step21.Patient.CPatientHome.AFindDoctor.ADoctorDetailsAndBookAppointments.DoctorDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Step21.Patient.CPatientHome.AFindDoctor.FindDoctorActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Step21.Patient.BRegister.RegisterActivity"
+            android:exported="false"
+            android:resizeableActivity="true" />
+        <activity
+            android:name=".Step21.Patient.CPatientHome.PatientHomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Step21.Patient.ALogin.LoginActivity"
+            android:exported="false"
+            android:resizeableActivity="true" />
+        <activity
+            android:name=".Step2.Choice.ChoiceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Step1.Slider.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

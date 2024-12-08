@@ -1,0 +1,607 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".Step22.Doctor.CDoctorHome.DoctorHomeActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:background="@drawable/toolbar_background"
+                android:elevation="8dp"
+                android:paddingTop="15dp"
+                android:requiresFadingEdge="vertical"
+                app:titleTextAppearance="@style/ToolbarTitleText"
+                app:titleTextColor="@color/purple" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/hos1_removebg_preview"></ImageView>
+
+            <View
+                android:layout_width="350dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/aliceblue"
+                android:elevation="2dp" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_margin="5dp"
+                android:background="@drawable/custom_edittext"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="4dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="5dp"
+                        android:paddingLeft="20dp"
+                        android:text="Appointments"
+                        android:textSize="18sp"
+                        android:textStyle="bold"></TextView>
+
+                    <GridLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:columnCount="4"
+                        android:rowCount="1">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|center_horizontal"
+                            android:layout_marginTop="20dp"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="10dp"
+                            >
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/Showappiomentlist"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_row="0"
+                                android:layout_rowWeight="1"
+                                android:layout_column="0"
+                                android:layout_columnWeight="1"
+                                android:layout_gravity="fill"
+                                android:background="@drawable/custom_edittext"
+                                android:clickable="true"
+                                app:cardBackgroundColor="@color/white"
+                                app:cardCornerRadius="50dp"
+                                app:cardElevation="5dp">
+
+
+                                <ImageView
+                                    android:layout_width="60dp"
+                                    android:layout_height="60dp"
+                                    android:layout_gravity="center"
+                                    android:layout_margin="5dp"
+                                    android:src="@drawable/dietappp"></ImageView>
+
+
+                            </androidx.cardview.widget.CardView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Show list\nof\nAppioments"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="11sp"
+                                android:textStyle="bold"></TextView>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|center_horizontal"
+                            android:layout_marginTop="12dp"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="10dp">
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/SetTimeAndDates"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_row="0"
+                                android:layout_rowWeight="1"
+                                android:layout_column="1"
+                                android:layout_columnWeight="1"
+                                android:layout_gravity="fill"
+                                android:background="@drawable/custom_edittext"
+                                android:clickable="true"
+                                app:cardBackgroundColor="@color/white"
+                                app:cardCornerRadius="50dp"
+                                app:cardElevation="5dp">
+
+
+                                <ImageView
+                                    android:layout_width="60dp"
+                                    android:layout_height="60dp"
+                                    android:layout_gravity="center"
+                                    android:layout_margin="5dp"
+                                    android:src="@drawable/physican"></ImageView>
+
+
+                            </androidx.cardview.widget.CardView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Set\nappointment"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="11sp"
+                                android:textStyle="bold"></TextView>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|center_horizontal"
+                            android:layout_marginTop="12dp"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="10dp">
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/DeleteAppioment"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_row="0"
+                                android:layout_rowWeight="1"
+                                android:layout_column="2"
+                                android:layout_columnWeight="1"
+                                android:layout_gravity="fill"
+                                android:background="@drawable/custom_edittext"
+                                android:clickable="true"
+                                app:cardBackgroundColor="@color/white"
+                                app:cardCornerRadius="50dp"
+                                app:cardElevation="5dp">
+
+
+                                <ImageView
+                                    android:layout_width="60dp"
+                                    android:layout_height="60dp"
+                                    android:layout_gravity="center"
+                                    android:layout_margin="5dp"
+                                    android:src="@drawable/dietappp"></ImageView>
+
+
+                            </androidx.cardview.widget.CardView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Delete\nAppointments"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="11sp"
+                                android:textStyle="bold"></TextView>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|center_horizontal"
+                            android:layout_marginTop="12dp"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="10dp">
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/SheduleAppionments"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_row="0"
+                                android:layout_rowWeight="1"
+                                android:layout_column="3"
+                                android:layout_columnWeight="1"
+                                android:layout_gravity="fill"
+                                android:background="@drawable/custom_edittext"
+                                android:clickable="true"
+                                app:cardBackgroundColor="@color/white"
+                                app:cardCornerRadius="50dp"
+                                app:cardElevation="5dp">
+
+
+                                <ImageView
+                                    android:layout_width="60dp"
+                                    android:layout_height="60dp"
+                                    android:layout_gravity="center"
+                                    android:layout_margin="5dp"
+                                    android:src="@drawable/dietappp"></ImageView>
+
+
+                            </androidx.cardview.widget.CardView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Manage\nappointments"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="11sp"
+                                android:textStyle="bold"></TextView>
+                        </LinearLayout>
+                    </GridLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_margin="5dp"
+                android:background="@drawable/custom_edittext"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="4dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="5dp"
+                        android:paddingLeft="20dp"
+                        android:text="Others"
+                        android:textSize="18sp"
+                        android:textStyle="bold"></TextView>
+
+
+                    <GridLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:columnCount="4"
+                        android:rowCount="2">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|center_horizontal"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="10dp">
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/DoctorHomeSetAppioment"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_row="0"
+                                android:layout_rowWeight="1"
+                                android:layout_column="0"
+                                android:layout_columnWeight="1"
+                                android:layout_gravity="fill"
+                                android:background="@drawable/custom_edittext"
+                                android:clickable="true"
+                                app:cardBackgroundColor="@color/white"
+                                app:cardCornerRadius="50dp"
+                                app:cardElevation="5dp">
+
+                                <ImageView
+                                    android:layout_width="60dp"
+                                    android:layout_height="60dp"
+                                    android:layout_gravity="center"
+                                    android:layout_margin="5dp"
+                                    android:src="@drawable/appointmt"></ImageView>
+                            </androidx.cardview.widget.CardView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Appiontments"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="11sp"
+                                android:textStyle="bold"></TextView>
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|center_horizontal"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="10dp">
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/DoctorHomeChangeFees"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_row="0"
+                                android:layout_rowWeight="1"
+                                android:layout_column="1"
+                                android:layout_columnWeight="1"
+                                android:layout_gravity="fill"
+                                android:background="@drawable/custom_edittext"
+                                android:clickable="true"
+                                app:cardBackgroundColor="@color/white"
+                                app:cardCornerRadius="50dp"
+                                app:cardElevation="5dp">
+
+
+                                <ImageView
+                                    android:layout_width="60dp"
+                                    android:layout_height="60dp"
+                                    android:layout_gravity="center"
+                                    android:layout_margin="5dp"
+                                    android:src="@drawable/moneyyy"></ImageView>
+
+
+                            </androidx.cardview.widget.CardView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Change Fees"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="11sp"
+                                android:textStyle="bold"></TextView>
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|center_horizontal"
+                            android:layout_marginTop="12dp"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="10dp">
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/DoctorHomeShowPatientDetails"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_row="0"
+                                android:layout_rowWeight="1"
+                                android:layout_column="2"
+                                android:layout_columnWeight="1"
+                                android:layout_gravity="fill"
+                                android:background="@drawable/custom_edittext"
+                                android:clickable="true"
+                                app:cardBackgroundColor="@color/white"
+                                app:cardCornerRadius="50dp"
+                                app:cardElevation="5dp">
+
+
+                                <ImageView
+                                    android:layout_width="60dp"
+                                    android:layout_height="60dp"
+                                    android:layout_gravity="center"
+                                    android:layout_margin="5dp"
+                                    android:src="@drawable/f1"></ImageView>
+
+
+                            </androidx.cardview.widget.CardView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Patient Details,\nAppointments"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="11sp"
+                                android:textStyle="bold"></TextView>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|center_horizontal"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="10dp">
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/DoctorHomeMedicine"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_row="0"
+                                android:layout_rowWeight="1"
+                                android:layout_column="3"
+                                android:layout_columnWeight="1"
+                                android:layout_gravity="fill"
+                                android:background="@drawable/custom_edittext"
+                                android:clickable="true"
+                                app:cardBackgroundColor="@color/white"
+                                app:cardCornerRadius="50dp"
+                                app:cardElevation="5dp">
+
+
+                                <ImageView
+                                    android:layout_width="60dp"
+                                    android:layout_height="60dp"
+                                    android:layout_gravity="center"
+                                    android:layout_margin="5dp"
+                                    android:src="@drawable/m2"></ImageView>
+
+
+                            </androidx.cardview.widget.CardView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="  Medicine  "
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="11sp"
+                                android:textStyle="bold"></TextView>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|center_horizontal"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="10dp">
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/DoctorHomeHistory"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_row="1"
+                                android:layout_rowWeight="1"
+                                android:layout_column="0"
+                                android:layout_columnWeight="1"
+                                android:layout_gravity="fill"
+                                android:background="@drawable/custom_edittext"
+                                android:clickable="true"
+                                app:cardBackgroundColor="@color/white"
+                                app:cardCornerRadius="50dp"
+                                app:cardElevation="5dp">
+
+                                <ImageView
+                                    android:layout_width="60dp"
+                                    android:layout_height="60dp"
+                                    android:layout_gravity="center"
+                                    android:layout_margin="5dp"
+                                    android:src="@drawable/history"></ImageView>
+
+
+                            </androidx.cardview.widget.CardView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="History\n"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="11sp"
+                                android:textStyle="bold"></TextView>
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|center_horizontal"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="10dp">
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/Logout"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_row="1"
+                                android:layout_rowWeight="1"
+                                android:layout_column="1"
+                                android:layout_columnWeight="1"
+                                android:layout_gravity="fill"
+                                android:background="@drawable/custom_edittext"
+                                android:clickable="true"
+                                app:cardBackgroundColor="@color/white"
+                                app:cardCornerRadius="50dp"
+                                app:cardElevation="5dp">
+
+
+                                <ImageView
+                                    android:layout_width="60dp"
+                                    android:layout_height="60dp"
+                                    android:layout_gravity="center"
+                                    android:layout_margin="5dp"
+                                    android:src="@drawable/logout"></ImageView>
+
+
+                            </androidx.cardview.widget.CardView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Logout\n"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="11sp"
+                                android:textStyle="bold"></TextView>
+                        </LinearLayout>
+                    </GridLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <View
+                android:layout_width="350dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/aliceblue"
+                android:elevation="2dp" />
+
+            <ImageView
+                android:id="@+id/GIF"
+                android:layout_width="match_parent"
+                android:layout_height="155dp"></ImageView>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@drawable/toolbar_background2"
+        android:elevation="10dp"
+        app:itemIconTint="@color/selector_nav_icons"
+        app:itemTextAppearanceActive="@style/ActiveNavText"
+        app:itemTextAppearanceInactive="@style/InactiveNavText"
+        app:itemTextColor="@color/selector_nav_text"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/bottom_nav_menu_doctor"
+        app:titleTextAppearance="@style/ToolbarTitleText" />
+</androidx.appcompat.widget.LinearLayoutCompat>
