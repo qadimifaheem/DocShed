@@ -59,7 +59,8 @@
 
 
 
-<img src="https://github.com/user-attachments/assets/e7906a2f-0ce8-444d-a671-a7c34f15e0f5" alt="WhatsApp Image 2024-12-08" width="300" height = "620">
+<img src="https://github.com/user-attachments/assets/4e57dd05-7a9c-44ad-ac5b-ccd31ebe8bc8" alt="WhatsApp Image 2024-12-08" width="300" height = "610">
+
 
 
 
@@ -73,7 +74,7 @@
 
 
 
-<img src="https://github.com/user-attachments/assets/d28d254d-9fe8-48d2-83a9-fb66a0925d38" alt="WhatsApp Image 2024-12-08" width="300" height = "620">
+<img src="https://github.com/user-attachments/assets/3da31a07-aee7-478d-9142-a4d45578183c" alt="WhatsApp Image 2024-12-08" width="300" height = "610">
 
 
 
@@ -88,7 +89,7 @@
 
 
 
-<img src="https://github.com/user-attachments/assets/e3697705-2637-477d-a0cd-1dd08d6afa40" alt="WhatsApp Image 2024-12-08" width="300" height = "620">
+<img src="https://github.com/user-attachments/assets/0b915e9a-258c-4a9b-9f2b-ddc4b7c75cfc" alt="WhatsApp Image 2024-12-08" width="300" height = "610">
 
 
 
@@ -106,8 +107,8 @@
 
 
 
-<img src="https://github.com/user-attachments/assets/9496ad11-10d0-4343-9b32-d6899faf6b07" alt="WhatsApp Image 2024-12-08" width="300" height = "620">
-<img src="https://github.com/user-attachments/assets/b925b84e-7e4b-46a5-a01a-be76b0a2336f" alt="WhatsApp Image 2024-12-08" width="300" height = "620">
+<img src="https://github.com/user-attachments/assets/31232c48-7f55-45b6-a41b-bfcd348a33a1" alt="WhatsApp Image 2024-12-08" width="300" height = "610">
+<img src="https://github.com/user-attachments/assets/20917dc3-98c5-406f-be71-5f26c61ee02c" alt="WhatsApp Image 2024-12-08" width="300" height = "610">
 
 
 
@@ -126,8 +127,10 @@
 
 
 
-<img src="https://github.com/user-attachments/assets/eb4f586e-3cff-411b-a25d-f36d45e36185" alt="WhatsApp Image 2024-12-08" width="300" height = "620">
-<img src="https://github.com/user-attachments/assets/9ef387c5-80af-42ef-ba18-875dee0b99e4" alt="WhatsApp Image 2024-12-08" width="300" height = "620">
+<img src="https://github.com/user-attachments/assets/676b228f-8783-4d6d-9473-7284d4d8028e" alt="WhatsApp Image 2024-12-08" width="300" height = "610">
+<img src="https://github.com/user-attachments/assets/41cb6ee5-3101-4b1c-8afa-25bb7745776d" alt="WhatsApp Image 2024-12-08" width="300" height = "610">
+
+
 
 
 **Admin Module**
@@ -140,8 +143,9 @@
 
 
 
-<img src="https://github.com/user-attachments/assets/bc9b0ccb-c838-44c0-9386-774d6470c099" alt="WhatsApp Image 2024-12-08" width="300" height = "620">
-<img src="https://github.com/user-attachments/assets/9808f9bc-5d1a-4bb7-ba15-f918e4a81cfc" alt="WhatsApp Image 2024-12-08" width="300" height = "620">
+
+<img src="https://github.com/user-attachments/assets/9b93de40-4eee-439c-8e81-532a971a9035" alt="WhatsApp Image 2024-12-08" width="300" height = "610">
+<img src="https://github.com/user-attachments/assets/66572217-a3c9-44b0-82ae-2152296511c1" alt="WhatsApp Image 2024-12-08" width="300" height = "610">
 
 
 **Notifications**
@@ -156,6 +160,7 @@
 
 
 
-<img src="https://github.com/user-attachments/assets/64df1653-a700-4310-b722-a903ec6e72d9" alt="WhatsApp Image 2024-12-08" width="300" height = "620">
+<img src="https://github.com/user-attachments/assets/c889e34b-0797-4da4-9ed8-9c2995d1170f" alt="WhatsApp Image 2024-12-08" width="300" height = "610">
+
 
 
