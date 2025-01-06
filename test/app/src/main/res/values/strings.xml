@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">DocShed</string>
-    <string name="default_web_client_id">224759493288-7uai6niff1a6gnfhsb5gddj0af4lva06.apps.googleusercontent.com</string>
+    <string name="default_web_client_id"></string>
     <string name="image_desc" />
     <string name="full_screen_image">\n</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
